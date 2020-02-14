@@ -1,0 +1,7 @@
+.centerText {
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100vh;
+  padding: 0 !important;
+}

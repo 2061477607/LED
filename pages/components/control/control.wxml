@@ -1,0 +1,54 @@
+<view class='controlWrap' wx:if='{{showFlag && papahide}}'>
+  <view class='hint'>{{hintText}}</view>
+  <view class='controlMain'>
+    <i class="iconfont  icondefault icon" bindtap="gohome"></i>
+    <input class="input" placeholder="请输入弹幕" catchfocus="focus" bindblur='onblur' catchconfirm="textInput"></input>
+    <i class="iconfont  iconshezhi icon" bindtap="showcontrol"></i>
+  </view>
+</view>
+<view class="controlContent" wx:if='{{controlShow}}' >
+<view class="confirm" bindtap="hidecontrol">完成</view>
+<scroll-view class="controlContent" scroll-y>
+  
+  <view class="settingWrap" wx:if="{{config.fontColor}}">
+    <text class="settingTitle">字体颜色</text>
+    <scroll-view scroll-x class='colorContent' scroll-x="true" scroll-left='0'>
+      <block wx:for="{{colorArray}}">
+        <view class="colorItem" style="background:{{item}}" data-color="{{item}}" bindtap="selectFontColor"></view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="settingWrap" wx:if="{{config.moshi}}">
+    <text class="settingTitle">展示模式</text>
+    <scroll-view scroll-x class='colorContent' scroll-x="true" scroll-left='0'>
+      <block wx:for="{{moshiArray}}">
+        <view class="colorItem bk" data-moshi="{{item.code}}" bindtap="selectMoshi">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="settingWrap" wx:if="{{config.speed}}">
+    <text class="settingTitle">滚动速度</text>
+    <scroll-view scroll-x class='colorContent' scroll-x="true" scroll-left='0'>
+      <block wx:for="{{speedArray}}">
+        <view class="colorItem bk" data-speed="{{item.code}}" bindtap="selectSpeed">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="settingWrap" wx:if="{{config.fontSize}}">
+    <text class="settingTitle">字体大小</text>
+    <scroll-view scroll-x class='colorContent' scroll-x="true" scroll-left='0'>
+      <block wx:for="{{SizeArray}}">
+        <view class="colorItem bk" data-size="{{item.code}}" bindtap="selectFontSize">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="settingWrap" wx:if="{{config.bkColor}}">
+    <text class="settingTitle">背景颜色</text>
+    <scroll-view scroll-x class='colorContent' scroll-x="true" scroll-left='0'>
+      <block wx:for="{{colorArray}}">
+        <view class="colorItem" style="background:{{item}}" data-color="{{item}}" bindtap="selectBkColor"></view>
+      </block>
+    </scroll-view>
+  </view>
+</scroll-view>
+</view>

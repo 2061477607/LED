@@ -1,0 +1,133 @@
+/* pages/control/control.wxss */
+.controlWrap{
+  width: 95%;
+  position: fixed;
+  bottom: 30rpx;
+  margin-left: 2%;
+ 
+}
+.controlMain{
+  display: flex;
+  justify-content: space-around;
+}
+.hint{
+    width: 100%;
+  color: red;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 30rpx 0;
+}
+.input{
+ margin: 0 20rpx;
+height: 60rpx;
+line-height: 60rpx;
+font-size: 40rpx;
+color: #fff;
+background: #333232;
+border-radius: 10rpx;
+text-align: center;
+padding: 10rpx;
+
+}
+
+.controlContent{
+  height: 680rpx;
+  width: 100%;
+  position: fixed;
+  background: #333333b3;
+  bottom:0;
+  padding-bottom: 10px;
+}
+.confirm{
+  background: #333333b3;
+    width: 100rpx;
+  height: 80rpx;
+  color:#fff;
+  line-height: 80rpx;
+  text-align: center;
+  position: absolute;
+  top: -100rpx;
+  right: 50rpx;
+}
+.settingWrap{
+  height:130rpx;
+  margin-top: 30rpx;
+   margin-left:20rpx;
+  width: 100%;
+  display: block;
+}
+.settingTitle{
+  height: 40rpx;
+ 
+  color: #fff;
+  font-size: 36rpx;
+  text-align: left;
+  display: block;
+}
+.colorContent{
+  padding-top:20rpx;
+  height: 80rpx;
+  display: block;
+  white-space: nowrap;
+}
+.colorItem{
+  width: 80rpx;
+  height: 80rpx;
+  display: inline-block;
+  margin: 0 10rpx;
+  border-radius:10%;
+}
+.bk{
+  background: #424141;
+  color: #fff;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+
+
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1638638_f2mejtbxpad.eot?t=1581604345633'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1638638_f2mejtbxpad.eot?t=1581604345633#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAASYAAsAAAAACTAAAARLAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqFTIRcATYCJAMUCwwABCAFhG0HSRvpB1GULkqC7EeBu6cIhLIYGErbx4uT4n9hy78jiPb7zd7de18RbWqR7s0TCSqeIBQqCWKjdI1eAmvT9I9JkMV/w0droskzfJfLcuQ4XbwMF6EC2AJW8Y7l1LOvkdOQnY1TYArXI2anLyYySHuN3wjxiXunjaWBzWdZLmMuGhs39akLMJpAWbY30MYCLZBEvUU8kw7+J/A0gbZxA7Wd3eUOXYU6KRA3znrQjdiUAnZoGuuMlUU8gUozPaCzwKPz/fgzCz5Jlakzj862ISw+y+cspPSUE4sE5N15wK4jYxUoxG2m70bDS65qaMvxpg2gxJuS1FW3+nP4w6xeD6oWZGhrf3hkRUhETdV1CX0jXPg0hGQ+a1mWfhgtAvWzmJJwXAHaHaU/QExyptku84oknS3aQKi7rpGJebwA0QVdRkwaAPep0enIYUTHASuG6QFAG9Gxy2w0DW8IwDHetmSC5i56S9qXTWHByjVJae8GNKvPBq8YQKCu/05Z30Y0s9daUt4vgzkDdmcko7Q5SjX1TQnxmJmBFgQWs3tFCMcdYJh9mZ3dfym9AwA9aVVU5cH0agTR1cRUARCa/+SswSPeQ3jhHPqkYMSPVbaO4FXN5jfnzkbPm9Jb8+hF2ndwb9sQNejNKDqYJcZ4bl/BQsycCbcjn1vhfEYOtA+fHGctS7jwMcaikP61HcuSRGFdWKQkE/tDkX4OpzaRJx1unHIgSb+XH2lBulvv0++dPa2b5WHeEndSThw+qcYWMPXJwzedp+nMDidKDRcMpYmHKQvZgswC6McWz4u1oguLYNGKtOLzi3qNou3bZVrj3eetjYGx9fndxlpZrMddVUMJejoi4jSiia2e6Gm42mqNs+PmrU77dbG91PnYpVdWJlb0rleeeCzuaUqeDMxWnCrCcB8ClXpIFxou4BfxJuAnpbBaF0KOuZLCSCH5hvq4PL1zelhOUG+EZCQpdMUIuUvtzlpnNPLzPXJimCEt02+S+PnOtbd2u2s0EBoGd6c/eAgA/vNgOrwK3HoYC3dzX8IK6GQehJpB/vH8xmkIc+wEHvxNOb9TwMv1839S8p9XQL4B+AL0Kss/FXnFiqIoVXtVpHJDJvkruyGbJNe18YGEBv12YxipHCc0I3IWScMYsqZZcqGvotKxhlrTOtpW7Nd3DBENUVpY9gkI/b6Q9HpG1u+bXOg/qIz6Q60/INqOY/WOHfNxqa8S8pRC9N/RBZwb3al9N/tKtko9CSsdzpOkdBGcurrHM3vKSbqYU77YmapBI5zhDs6jNGUshGMKdBSpFvOx2/msC40CzqBvmyAeRULI9w45AZYzVm3VT3z+iliVlEcKCGXRJyJKrnM0NTKpQN7r8kqEU+lfemHNKGWocYZgGbRDD0m1JENF9rAYCaiRqEG8MDcm1UxV3Wh4Q3aO26BN3auKFDlKVFHLdxW3r3jOXtw5S8arUm3fiegjcgAA') format('woff2'),
+  url('//at.alicdn.com/t/font_1638638_f2mejtbxpad.woff?t=1581604345633') format('woff'),
+  url('//at.alicdn.com/t/font_1638638_f2mejtbxpad.ttf?t=1581604345633') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1638638_f2mejtbxpad.svg?t=1581604345633#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconsuo:before {
+  content: "\e614";
+}
+
+.iconkaisuo:before {
+  content: "\e624";
+}
+
+.icondefault:before {
+  content: "\e604";
+}
+
+.iconshezhi:before {
+  content: "\e606";
+}
+
+.icon{
+  width: 100rpx;
+  height: 80rpx;
+  background: #333232;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 60rpx;
+  color: #fff;
+   border-radius:10rpx;
+}

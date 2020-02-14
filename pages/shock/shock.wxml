@@ -1,0 +1,1 @@
+<view class='container centerText'  style="background:{{bkcolor}}" bindtap='stop' >{{text}}</view>

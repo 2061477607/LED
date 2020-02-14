@@ -1,0 +1,4 @@
+<view class="container" bindtap="toggleBar" style="background:{{background}}">
+  <text class='scorll-text' animation="{{scorll}}" style='color:{{color}};font-size:{{fontSize}}vw;'>{{displayText}}</text>
+</view>
+<control papahide='{{papaHide}}' bind:getFontColor="get_font_color"  bind:getBkColor="get_bk_color"  bind:getSpeed="get_speed"  bind:getSize="get_size" bind:getText="get_text"></control>

@@ -1,0 +1,4 @@
+<view class="container" bindtap="toggleBar" style="background:{{background}}">
+  <text id='scorll-text' class="{{moshiFlag?'scorll-text-wrap':'scorll-text'}}"  style='color:{{color}};font-size:{{fontSize}}vw;'>{{displayText}}</text>
+</view>
+<control config='{{Config}}' papahide='{{papaHide}}' bind:getFontColor="get_font_color"  bind:getBkColor="get_bk_color"   bind:getSize="get_size" bind:getText="get_text" bind:getMoshi="get_moshi"></control>

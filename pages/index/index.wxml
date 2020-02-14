@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+
+
+
+  <!-- 广告区域 -->
+  <view class='ad'>
+
+  </view>
+  <!-- 经典弹幕 -->
+  <view class="danmu_wrap">
+    <view class=' old' bindtap="goToOldDanmu">经典弹幕</view>
+  </view>
+
+  <!-- 静止文字 -->
+  <view class="danmu_wrap color" bindtap="goToText">
+    <view class='white'>静止文字</view>
+  </view>
+  <!-- 应援闪屏 -->
+  <view class='led_wrap'>
+    <view class='white' bindtap="goToshock">应援闪屏</view>
+  </view>
+
+  <!-- 接机牌 -->
+
+  <view class="danmu_wrap right" bindtap="goTojieji">
+    <view class=' old'>接机牌</view>
+  </view>
+  
+</view>
